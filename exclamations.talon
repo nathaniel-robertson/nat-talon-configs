@@ -16,13 +16,16 @@ hey hey hey:
 
 # Swears
 
-son of a bitch:
+[son of a] bitch:
     input("")
 
 fuck:
     input("")
 
 what the [fuck] [hell]:
+    input("")
+
+fucking hell:
     input("")
 
 god [fucking] damnit:
