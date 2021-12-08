@@ -22,7 +22,7 @@ son of a bitch:
 fuck:
     input("")
 
-what the fuck:
+what the [fuck] [hell]:
     input("")
 
 god [fucking] damnit:
