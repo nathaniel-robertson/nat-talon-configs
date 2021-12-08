@@ -27,3 +27,6 @@ what the fuck:
 
 god [fucking] damnit:
     input("")
+
+oh shit:
+    input("")
