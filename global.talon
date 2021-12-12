@@ -1,3 +1,7 @@
+# This is meant to be an alternate word for the command key but it's not working yet.
+comrade:
+    key(cmd)
+
 key(f5): 
     speech.toggle()
 

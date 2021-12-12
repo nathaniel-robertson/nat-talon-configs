@@ -19,7 +19,7 @@ hey hey hey:
 [son of a] bitch:
     input("")
 
-fuck:
+fuck [you]:
     input("")
 
 what the [fuck] [hell]:
@@ -31,5 +31,8 @@ fucking hell:
 god [fucking] damnit:
     input("")
 
-oh shit:
+[oh] shit:
+    input("")
+
+holy [shit] [fuck]:
     input("")
