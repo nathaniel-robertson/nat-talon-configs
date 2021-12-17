@@ -5,6 +5,12 @@ app: chrome
 chrome caret:
     key(f7)
 
+wordpress go admin:
+    key(cmd-l)
+    key(cmd-right)
+    insert("/wp-admin")
+    key(enter)
+
 # function provided by Vimium custom configuration
 
 links:
@@ -19,3 +25,4 @@ links copy:
 
 tab duplicate:
     key(d)
+
