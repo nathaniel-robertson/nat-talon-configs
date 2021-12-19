@@ -1,6 +1,9 @@
 # go left and right
 # Dank and Dabby
 
+# use word "slurp" for selecting text?
+# could use some short words for clearing words as well
+
 dink:
     edit.right()
 

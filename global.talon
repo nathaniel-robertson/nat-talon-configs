@@ -5,6 +5,9 @@
 key(f5): 
     speech.toggle()
 
+mac lock screen:
+    key(ctrl-cmd-q)
+
 # this ended up being a bad idea because it collides with phrases like go right or go left
 # go:
 #     key(enter)
