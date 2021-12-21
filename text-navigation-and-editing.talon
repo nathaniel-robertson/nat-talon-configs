@@ -38,6 +38,9 @@ step:
 stone:
     key(alt-left)
                 
+# Text Selection
 
+poach:
+    edit.select_word()
 
 

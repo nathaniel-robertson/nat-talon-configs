@@ -6,3 +6,9 @@ sheet menu:
 
 sheet list:
     key(shift-alt-k)
+
+sheet next:
+    key(cmd-shift-pagedown)
+
+sheet last:
+    key(cmd-shift-pageup)

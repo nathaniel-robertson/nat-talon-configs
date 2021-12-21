@@ -8,6 +8,9 @@ key(f5):
 mac lock screen:
     key(ctrl-cmd-q)
 
+search menus:
+    key(shift-cmd-/)
+
 # this ended up being a bad idea because it collides with phrases like go right or go left
 # go:
 #     key(enter)
