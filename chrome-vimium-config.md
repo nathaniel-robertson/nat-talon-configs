@@ -1,6 +1,6 @@
-# Insert your preferred key mappings here. 
-unmapAll 
-map f LinkHints.activateMode 
-map F LinkHints.activateModeToOpenInNewTab 
-map yf LinkHints.activateModeToCopyLinkUrl 
-map d duplicateTab 
+# Insert your preferred key mappings here.  
+unmapAll  
+map f LinkHints.activateMode  
+map F LinkHints.activateModeToOpenInNewTab  
+map yf LinkHints.activateModeToCopyLinkUrl  
+map d duplicateTab  
