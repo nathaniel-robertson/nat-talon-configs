@@ -30,3 +30,5 @@ links copy:
 tab duplicate:
     key(d)
 
+tab restore:
+    tab_reopen()
