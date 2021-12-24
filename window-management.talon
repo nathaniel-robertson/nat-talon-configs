@@ -26,11 +26,11 @@ snap right:
     key(ctrl-alt-cmd-right)
     
 
-snap top left:
-    key(fn-ctrl-alt-cmd-/)
-snap top right:
-    key(fn-ctrl-alt-cmd-up)
-snap bottom left:
-    key(fn-ctrl-alt-cmd-left)
-snap bottom right:
-    key(fn-ctrl-alt-cmd-right)
+# snap top left:
+#     key(function_key-ctrl-alt-cmd-/)
+# snap top right:
+#     key(function_key-ctrl-alt-cmd-up)
+# snap bottom left:
+#     key(function_key-ctrl-alt-cmd-left)
+# snap bottom right:
+#     key(function_key-ctrl-alt-cmd-right)

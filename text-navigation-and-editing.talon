@@ -43,4 +43,14 @@ stone:
 poach:
     edit.select_word()
 
+swill:
+    edit.extend_word_left()
+    
+taste:
+    edit.extend_left()
+    
+snack:
+    edit.extend_word_right()
 
+nibble:
+    edit.extend_right()

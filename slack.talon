@@ -6,3 +6,6 @@ app: slack
 
 (slack | lack) (jump | switch):
     key(cmd-k)
+
+(slack | lack) search:
+    key(cmd-f)

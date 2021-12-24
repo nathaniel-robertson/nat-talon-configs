@@ -1,3 +1,4 @@
+p
 # Maps voice commands to my TextExpander snippet abbreviations
 
 # Personal
@@ -10,6 +11,10 @@ expand personal phone number:
     
 expand my name:
     insert("nr;")
+
+# ISO 8601 format
+expand date:
+    insert("date;")
 
 # Work
 
