@@ -10,6 +10,8 @@ new email: key(cmd-n)
 Reply: key(cmd-r)
 Reply all: key(cmd-shift-r)
 Forward: key(cmd-j)
+search email: key(cmd-f)
+search messages: key(alt-cmd-f)
 
 # Calendar
 # I'm considering splitting this into two files in the future and filtering by window title
