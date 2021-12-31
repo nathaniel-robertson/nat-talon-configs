@@ -1,5 +1,5 @@
 os: mac
-app: paste
+app.bundle: com.wiheads.paste
 -
 
 # Paste clipboard manager
