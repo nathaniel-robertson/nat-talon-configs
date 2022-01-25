@@ -32,3 +32,6 @@ tab duplicate:
 
 tab restore:
     tab_reopen()
+
+tab search:
+    key(cmd-shift-a)

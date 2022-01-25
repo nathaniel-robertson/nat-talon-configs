@@ -11,6 +11,14 @@ mac lock screen:
 search menus:
     key(shift-cmd-/)
 
+# type ellipses
+ominous:
+    key(alt-;)
+
+# "shift" is hard to say!
+(shit tab | back tab):
+    key(shift-tab)
+
 # this ended up being a bad idea because it collides with phrases like go right or go left
 # go:
 #     key(enter)
@@ -30,6 +38,6 @@ sniper:
     
 # Paste
 
-clipboard:
+(clipboard | clippy):
     key(cmd-shift-p)
 

@@ -9,3 +9,7 @@ app: slack
 
 (slack | lack) search:
     key(cmd-f)
+    
+    
+(slack | lack) status:
+    key(cmd-shift-y)

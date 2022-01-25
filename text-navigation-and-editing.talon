@@ -43,7 +43,7 @@ stone:
 poach:
     edit.select_word()
 
-swill:
+(bevvy | drink | gulp):
     edit.extend_word_left()
     
 taste:

@@ -6,12 +6,15 @@ app.bundle: com.microsoft.Outlook
 (previous | last) (section | zone): key(ctrl-shift-[)
 
 archive: key(ctrl-e)
+flag: key(ctrl-5)
+(clear flag | unflag): key(alt-cmd-')
 new email: key(cmd-n)
 Reply: key(cmd-r)
 Reply all: key(cmd-shift-r)
 Forward: key(cmd-j)
 search email: key(cmd-f)
 search messages: key(alt-cmd-f)
+send email: key(cmd-enter)
 
 # Calendar
 # I'm considering splitting this into two files in the future and filtering by window title
