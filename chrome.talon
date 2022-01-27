@@ -24,8 +24,7 @@ links tab:
     key(shift-f)
 
 links copy:
-    key(y)
-    key(f)
+    key(y f)
 
 tab duplicate:
     key(d)
@@ -35,3 +34,9 @@ tab restore:
 
 tab search:
     key(cmd-shift-a)
+
+tab move left:
+    key(m l)
+
+tab move right:
+    key(m r)
