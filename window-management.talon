@@ -25,6 +25,11 @@ snap left:
 snap right:
     key(ctrl-alt-cmd-right)
     
+# triggers a better touch tool shortcut
+# window management built into talon does not seem to be able to move some windows across monitors
+snap screen better:
+    key(ctrl-alt-cmd-])
+    
 
 # snap top left:
 #     key(function_key-ctrl-alt-cmd-/)

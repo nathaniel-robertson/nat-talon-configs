@@ -4,6 +4,9 @@
 # use word "slurp" for selecting text?
 # could use some short words for clearing words as well
 
+emoji picker:
+    key(ctrl-cmd-space)
+
 dink:
     edit.right()
 

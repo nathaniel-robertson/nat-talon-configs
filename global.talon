@@ -15,6 +15,13 @@ search menus:
 ominous:
     key(alt-;)
 
+secure address:
+    insert("https://")
+
+# this is a common separator I use in titles
+dasher:
+    insert(" - ")
+
 # "shift" is hard to say!
 (shit tab | back tab):
     key(shift-tab)
@@ -23,10 +30,10 @@ ominous:
 # go:
 #     key(enter)
 
-bullet:
-    key(enter)
-    key(-)
-    key(space)
+# bullet:
+#     key(enter)
+#     key(-)
+#     key(space)
     
 # triggers TextSniper
 sniper:
