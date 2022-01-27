@@ -8,3 +8,6 @@ app: iterm2
 # bash command piping
 piper:
     insert(" | ")
+
+clear line:
+    key(ctrl-u)
