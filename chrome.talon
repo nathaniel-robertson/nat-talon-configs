@@ -5,10 +5,6 @@ app: chrome
 chrome caret:
     key(f7)
 
-# future enhancement: get user input within same command
-search page:
-    key(cmd-f)
-
 wordpress go admin:
     key(cmd-l)
     key(cmd-right)
