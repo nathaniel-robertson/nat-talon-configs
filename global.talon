@@ -38,6 +38,10 @@ dasher:
 # triggers TextSniper
 sniper:
     key(cmd-shift-2)
+
+# future enhancement: get user input within same command
+search page:
+    key(cmd-f)
     
 # half:
 #     user.mouse_scroll_down(2)

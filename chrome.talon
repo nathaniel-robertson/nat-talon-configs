@@ -22,6 +22,10 @@ links tab:
 links copy:
     key(y f)
 
+# a lot faster than selecting the address bar, selecting all, and copying that
+tab (link | links | URL) copy:
+    key(t l c)
+
 tab duplicate:
     key(d)
 
