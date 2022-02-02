@@ -13,3 +13,6 @@ app: slack
     
 (slack | lack) status:
     key(cmd-shift-y)
+
+(slack | lack) upload:
+    key(cmd-u)
