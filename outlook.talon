@@ -2,8 +2,8 @@ os: mac
 app.bundle: com.microsoft.Outlook
 -
 
-[next] (section | zone): key(ctrl-shift-])
-(previous | last) (section | zone): key(ctrl-shift-[)
+(section | zone) [next]: key(ctrl-shift-])
+(section | zone) (previous | last): key(ctrl-shift-[)
 
 archive: key(ctrl-e)
 flag: key(ctrl-5)
