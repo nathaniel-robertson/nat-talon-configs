@@ -1,3 +1,7 @@
+# Install Vimium for Google Chrome: https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb
+# Direct link to Vimium options: chrome-extension://dbepggeogbaibhgnhhndojpepiihcmeb/pages/options.html
+# Replace everything in "Custom key mappings" in Vimium options with the lines below.
+
 # Insert your preferred key mappings here.
 unmapAll
 map f LinkHints.activateMode
