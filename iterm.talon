@@ -9,6 +9,10 @@ app: iterm2
 piper:
     insert(" | ")
 
+# reverse-i-search
+reverse eye:
+    key(ctrl-r)
+
 clear line:
     key(ctrl-u)
 
