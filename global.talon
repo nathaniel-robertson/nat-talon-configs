@@ -11,6 +11,12 @@ mac lock screen:
 search menus:
     key(shift-cmd-/)
 
+shenter:
+    key(shift-enter)
+
+altler:
+    key(alt-enter)
+
 # type ellipses
 ominous:
     key(alt-;)
