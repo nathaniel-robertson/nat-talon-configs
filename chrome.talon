@@ -11,6 +11,20 @@ wordpress go admin:
     insert("/wp-admin")
     key(enter)
 
+# Show TLS/SSL certificate. I'm sure this is really dumb with the repeating lines, but I do not know what the proper syntax is
+(certificate | cert) show:
+    browser.focus_address()
+    key(shift-tab)
+    key(space)
+    key(tab)
+    key(tab)
+    key(enter)
+    key(tab)
+    key(tab)
+    key(tab)
+    key(tab)
+    key(enter)
+
 # function provided by Vimium custom configuration
 
 links:
