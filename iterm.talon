@@ -10,7 +10,7 @@ piper:
     insert(" | ")
 
 # reverse-i-search
-reverse eye:
+reverse eye [search]:
     key(ctrl-r)
 
 clear line:
