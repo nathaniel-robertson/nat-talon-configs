@@ -14,8 +14,9 @@ search menus:
 shenter:
     key(shift-enter)
 
-altler:
-    key(alt-enter)
+# sort of a play on words of mashing "alt" and "enter" together
+antler:
+     key(alt-enter)
 
 # type ellipses
 ominous:
