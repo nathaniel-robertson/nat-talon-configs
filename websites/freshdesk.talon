@@ -26,7 +26,10 @@ ticket reply:
     sleep(1000ms)
     key(up)
     key(up)
-    
+
+insert image:
+    key(cmd-p)
+
 ticket next:
     key(j)
 
