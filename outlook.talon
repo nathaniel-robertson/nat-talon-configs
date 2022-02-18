@@ -8,6 +8,8 @@ app.bundle: com.microsoft.Outlook
 archive: key(ctrl-e)
 flag: key(ctrl-5)
 (clear flag | unflag): key(alt-cmd-')
+mark read: key(cmd-t)
+mark unread: key(cmd-shift-t)
 new email: key(cmd-n)
 Reply: key(cmd-r)
 Reply all: key(cmd-shift-r)
