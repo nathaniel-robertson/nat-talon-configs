@@ -14,6 +14,14 @@ search menus:
 shenter:
     key(shift-enter)
 
+# play on words of mashing "pause" and "enter" together
+# presses "enter" with a brief pause before and after
+# useful for interacting with certain web apps, especially if you repeat the command
+punter:
+    sleep(300ms)
+    key(enter)
+    sleep(300ms)
+
 # sort of a play on words of mashing "alt" and "enter" together
 antler:
      key(alt-enter)
