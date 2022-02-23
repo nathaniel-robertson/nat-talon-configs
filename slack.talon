@@ -14,5 +14,5 @@ app: slack
 (slack | lack) status:
     key(cmd-shift-y)
 
-(slack | lack) upload:
+(slack | lack) (upload | attach):
     key(cmd-u)
