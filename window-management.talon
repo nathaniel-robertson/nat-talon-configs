@@ -9,6 +9,9 @@ swick:
 gibby:
     key(cmd-`)
 
+gabbard:
+    key(cmd-shift-`)
+
 # maximizes window. triggers a better touch tool shortcut
 snap max:
     key(ctrl-alt-cmd-up)

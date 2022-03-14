@@ -11,6 +11,9 @@ mac lock screen:
 search menus:
     key(shift-cmd-/)
 
+stick:
+    user.mouse_cancel_zoom_mouse()
+
 shenter:
     key(shift-enter)
 
