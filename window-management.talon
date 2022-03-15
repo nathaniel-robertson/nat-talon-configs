@@ -12,6 +12,14 @@ gibby:
 gabbard:
     key(cmd-shift-`)
 
+# Mission Control - current app
+expose app:
+    key(ctrl-down)
+
+# Mission Control - all apps
+expose [all]:
+    key(ctrl-up)
+
 # maximizes window. triggers a better touch tool shortcut
 snap max:
     key(ctrl-alt-cmd-up)

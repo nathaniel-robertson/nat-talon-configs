@@ -26,6 +26,10 @@ wordpress user list:
     insert("wp user list")
     key(enter)
     
+wordpress plugin list:
+    insert("wp plugin list")
+    key(enter)
+    
 [wordpress] breeze clear cache:
     insert("wp breeze purge --cache=all")
     key(enter)
