@@ -21,13 +21,13 @@ expand date:
 expand old work email:
     insert("emd;")
 
-expand portland web design email:
+expand portland web design email [address]:
     insert("emd2;")
 
-expand powerful email:
+expand powerful email [address]:
     insert("emd3;")
 
-(expand work phone number | expand portland web design phone number):
+(expand work phone [number] | expand portland web design phone [number]):
     insert("phd;")
 
 expand portland web design support phone number:
