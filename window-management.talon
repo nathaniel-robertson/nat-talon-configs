@@ -20,6 +20,15 @@ expose app:
 expose [all]:
     key(ctrl-up)
 
+window minimize:
+    key(cmd-m)
+
+app quit:
+    key(cmd-q)
+
+app hide:
+    key(cmd-h)
+
 # maximizes window. triggers a better touch tool shortcut
 snap max:
     key(ctrl-alt-cmd-up)
