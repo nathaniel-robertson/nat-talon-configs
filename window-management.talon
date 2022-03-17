@@ -29,6 +29,9 @@ app quit:
 app hide:
     key(cmd-h)
 
+app hide others:
+    key(cmd-alt-h)
+
 # maximizes window. triggers a better touch tool shortcut
 snap max:
     key(ctrl-alt-cmd-up)
