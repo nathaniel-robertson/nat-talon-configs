@@ -10,6 +10,15 @@ inbox last:
 go inbox:
     key(g i)
 
+page next:
+    key(g n)
+
+page last:
+    key(g p)
+
+message delete:
+    key(#)
+
 archive:
     key(e)
 
