@@ -12,3 +12,6 @@ sheet next:
 
 sheet last:
     key(cmd-shift-pageup)
+
+sheet search menus:
+    key(alt-/)
