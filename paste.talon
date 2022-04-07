@@ -1,5 +1,4 @@
 os: mac
-app.bundle: com.wiheads.paste
 -
 
 # Paste clipboard manager
@@ -13,4 +12,4 @@ paste plain:
 
 # The syntax on this command is probably wrong. The idea is to be able to toggle the one through nine shortcuts in paste to paste a specific item.
 paste <number>:
-    key(cmd-<number>)
+    key("cmd-{number}")

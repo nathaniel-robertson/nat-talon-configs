@@ -23,13 +23,13 @@ expose [all]:
 window minimize:
     key(cmd-m)
 
-app quit:
+application quit:
     key(cmd-q)
 
-app hide:
+application hide:
     key(cmd-h)
 
-app hide others:
+application hide others:
     key(cmd-alt-h)
 
 # maximizes window. triggers a better touch tool shortcut

@@ -1,0 +1,10 @@
+- build Spotify commands
+- look at Talon media API and see if I can access that from USB Overdrive
+- figure out how to change audio input and output devices from Talon
+- build 1Password commands
+- WordPress classic editor commands. Supposedly the browser host context has support for regular expressions so we should be able to target a WordPress admin URL. Try to figure out a command to escape focus in the WordPress visual editor. This might be worth investigating how to run arbitrary javascript.
+- Look more generally into the javascript approach to see if we can use this to activate particular links and buttons on websites by ID. For example, various buttons inside Freshdesk.
+- break out WordPress CLI commands to separate file with terminal tag
+- Learned how to use the built in draft window
+- improves search page command to include search term
+- paste clipboard manager: add command to paste a numbered item as plain text
