@@ -10,3 +10,4 @@ map yf LinkHints.activateModeToCopyLinkUrl
 map d duplicateTab
 map ml moveTabLeft
 map mr moveTabRight
+map tlc copyCurrentUrl
