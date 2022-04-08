@@ -57,9 +57,9 @@ dasher:
 sniper:
     key(cmd-shift-2)
 
-# future enhancement: get user input within same command
-search page:
+search page <user.text>:
     key(cmd-f)
+    insert(user.formatted_text(user.text, "ALL_LOWERCASE"))
     
 # half:
 #     user.mouse_scroll_down(2)
