@@ -49,7 +49,7 @@ Reply all:
 Forward:
     key(f)
 
-search messages:
+(search messages | search [all] conversations):
     key(/)
 
 send email:
