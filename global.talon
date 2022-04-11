@@ -56,10 +56,12 @@ dasher:
 # triggers TextSniper
 sniper:
     key(cmd-shift-2)
-
+    
+search page:
+    user.find("")
 search page <user.text>:
     user.find(text)
-    
+
 # half:
 #     user.mouse_scroll_down(2)
 
