@@ -58,8 +58,7 @@ sniper:
     key(cmd-shift-2)
 
 search page <user.text>:
-    key(cmd-f)
-    insert(user.formatted_text(user.text, "ALL_LOWERCASE"))
+    user.find(text)
     
 # half:
 #     user.mouse_scroll_down(2)
