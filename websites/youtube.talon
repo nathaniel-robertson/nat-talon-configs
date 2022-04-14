@@ -22,6 +22,9 @@ slow down:
 search box:
     key(/)
 
+video next:
+    key(shift-n)
+
 # this is not going to work until I remap the Vimium key to open links and same tab
 full screen:
     key(f)
