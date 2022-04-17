@@ -1,4 +1,4 @@
-app: zoom.usage
+app: zoom.us
 -
 
 zoom mute:
