@@ -56,6 +56,8 @@ dasher:
 # triggers TextSniper
 sniper:
     key(cmd-shift-2)
+    sleep(100ms)
+    user.mouse_drag(0)
     
 search page:
     key(cmd-f)
