@@ -63,7 +63,7 @@ search page:
     key(cmd-f)
 search page <user.text>:
     key(cmd-f)
-    insert(user.formatted_text(user.text, "ALL_LOWERCASE"))    
+    insert(user.formatted_text(user.text, "ALL_LOWERCASE"))
 # half:
 #     user.mouse_scroll_down(2)
 
@@ -73,3 +73,7 @@ search page <user.text>:
 (clipboard | clippy):
     key(cmd-shift-p)
 
+(clipboard | clippy) [search] <user.text>:
+    key(cmd-shift-p)
+    sleep(100ms)
+    insert(user.formatted_text(user.text, "ALL_LOWERCASE"))
