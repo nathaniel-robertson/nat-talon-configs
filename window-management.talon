@@ -13,7 +13,7 @@ gabbard:
     key(cmd-shift-`)
 
 # Mission Control - current app
-expose app:
+expose (app | application):
     key(ctrl-down)
 
 # Mission Control - all apps
@@ -52,7 +52,26 @@ snap right:
 # window management built into talon does not seem to be able to move some windows across monitors
 snap screen better:
     key(ctrl-alt-cmd-])
-    
+
+slacker [<phrase>]$:
+    user.switcher_focus("Slack")
+    sleep(200ms)
+    user.parse_phrase(phrase or "")
+
+portal [<phrase>]$:
+    user.switcher_focus("Google Chrome")
+    sleep(200ms)
+    user.parse_phrase(phrase or "")
+
+^terminal [<phrase>]$:
+    user.switcher_launch("/Applications/iTerm.app")
+    sleep(200ms)
+    user.parse_phrase(phrase or "")
+
+^coder [<phrase>]$:
+    user.switcher_launch("/Applications/Visual Studio Code.app")
+    sleep(200ms)
+    user.parse_phrase(phrase or "")
 
 # snap top left:
 #     key(function_key-ctrl-alt-cmd-/)
