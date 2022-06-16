@@ -28,7 +28,7 @@ what the [fuck] [hell]:
 fucking hell:
     input("")
 
-god [fucking] damnit:
+god [fucking] damn it:
     input("")
 
 [oh] shit:
