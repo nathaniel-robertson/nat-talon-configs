@@ -33,13 +33,6 @@ antler:
 ominous:
     key(alt-;)
 
-secure address:
-    insert("https://")
-
-# this is a common separator I use in titles
-dasher:
-    insert(" - ")
-
 # "shift" is hard to say!
 (shit tab | back tab):
     key(shift-tab)
@@ -63,17 +56,37 @@ search page:
     key(cmd-f)
 search page <user.text>:
     key(cmd-f)
+    sleep(200ms)
     insert(user.formatted_text(user.text, "ALL_LOWERCASE"))
+search page (clipboard | paste):
+    key(cmd-f)
+    edit.paste()
+
 # half:
 #     user.mouse_scroll_down(2)
 
-    
-# Paste
+reminder mark complete:
+    user.click_spot("notification menu")
+    sleep(500ms)
+    edit.down()  
+    sleep(500ms)
+    key(enter)
 
-(clipboard | clippy):
-    key(cmd-shift-p)
+notification (close | hide):
+    user.mouse_helper_position_save()
+    user.move_to_spot("notification clothes")
+    sleep(300ms)
+    mouse_click(0)
+    user.mouse_helper_position_restore()
 
-(clipboard | clippy) [search] <user.text>:
-    key(cmd-shift-p)
-    sleep(100ms)
-    insert(user.formatted_text(user.text, "ALL_LOWERCASE"))
+notification menu:
+    user.click_spot("notification menu")
+
+talon restart:
+    user.system_command_nb("killall Talon; sleep 0.5; open /Applications/Talon\ Beta.app/")
+
+talon kill:
+    user.system_command_nb("killall Talon")
+
+scrape:
+    key(escape)
