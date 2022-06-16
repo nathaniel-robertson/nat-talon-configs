@@ -1,8 +1,11 @@
-# go left and right
-# Dank and Dabby
+piper:
+    insert(" | ")
+    
+dasher:
+    insert(" - ")
 
-# use word "slurp" for selecting text?
-# could use some short words for clearing words as well
+secure address:
+    insert("https://")
 
 emoji picker:
     key(ctrl-cmd-space)
@@ -57,3 +60,13 @@ snack:
 
 nibble:
     edit.extend_right()
+
+grab text:
+    key(shift:down)
+    mouse_click(0)
+    key(shift:up)
+    user.mouse_cancel_zoom_mouse()
+    edit.copy()    
+    sleep(500ms)
+    mouse_click(0)
+        
