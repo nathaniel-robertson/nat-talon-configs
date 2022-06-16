@@ -1,5 +1,8 @@
 app: chrome
 -
+
+tag(): user.emoji
+
 # Turns on caret browsing mode
 # https://support.google.com/chrome/answer/10129654?hl=en
 chrome caret:
@@ -20,10 +23,30 @@ wordpress go admin:
     key(tab)
     key(enter)
     key(tab)
-    key(tab)
-    key(tab)
-    key(tab)
+    repeat(2)
     key(enter)
+
+tab new (clipboard | paste):
+    app.tab_open()
+    sleep(200ms)
+    edit.paste()
+    sleep(200ms)
+    key(enter)
+
+tab this (clipboard | paste):
+    browser.focus_address()
+    sleep(200ms)
+    edit.paste()
+    sleep(200ms)
+    key(enter)
+
+(tab link rich copy | pretty page link):
+    key(ctrl-shift-p)
+    sleep(500ms)
+    key(enter)
+
+
+
 
 # function provided by Vimium custom configuration
 
