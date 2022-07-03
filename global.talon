@@ -83,7 +83,7 @@ notification menu:
     user.click_spot("notification menu")
 
 talon restart:
-    user.system_command_nb("killall Talon; sleep 0.5; open /Applications/Talon\ Beta.app/")
+    user.system_command_nb("killall Talon; sleep 1; open /Applications/Talon\ Beta.app/")
 
 talon kill:
     user.system_command_nb("killall Talon")
