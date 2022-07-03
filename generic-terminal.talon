@@ -10,6 +10,7 @@ reverse eye [search]:
     key(ctrl-r)
 
 clear line:
+    key(ctrl-e)
     key(ctrl-u)
 
 lisa list:
@@ -31,5 +32,33 @@ close frozen ssh:
 clear word:
     key(alt-backspace)
 
+query a:
+    insert("dig a ")
 
+query name server:
+    insert("dig ns ")
 
+query text [record]:
+    insert("dig txt ")
+
+query mail [record]:
+    insert("dig mx ")
+
+query authoritative:
+    insert("query_authoritative_nameserver ")
+
+logout:
+    insert("exit")
+    key(enter)
+
+history [all]:
+    insert("history")
+    key(enter)
+
+history <number>:
+    insert("history | tail -n{number}")
+    key(enter)
+
+(run | rerun) [history] <number>:
+    insert("!{number}")
+    key(enter)    
