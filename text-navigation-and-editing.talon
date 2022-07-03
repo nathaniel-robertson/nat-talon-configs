@@ -4,6 +4,12 @@ piper:
 dasher:
     insert(" - ")
 
+em dash:
+    insert("—")
+
+em dasher:
+    insert(" — ")
+
 secure address:
     insert("https://")
 
