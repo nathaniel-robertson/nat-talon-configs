@@ -25,7 +25,7 @@ lisa list:
     insert("cd ..")
     key(enter)
 
-close frozen ssh:
+[close] frozen ssh:
     key(enter ~ .)
 
 # Override of defaults knausj. This does not work right now. Manually pressing the keys definitely does work. Saying "alt delete" does work so I'm not sure what's going on here.
@@ -46,6 +46,20 @@ query mail [record]:
 
 query authoritative:
     insert("query_authoritative_nameserver ")
+
+who is organization:
+    insert("whois  | grep \"Organization:\"")
+    key(alt-left)
+    repeat(1)
+    edit.left()
+    repeat(2)
+
+who is (name server | name servers | authoritative):
+    insert("whois  | grep \"Name Server:\"")
+    key(alt-left)
+    repeat(2)
+    edit.left()
+    repeat(2)
 
 logout:
     insert("exit")
