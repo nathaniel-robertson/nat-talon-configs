@@ -49,14 +49,14 @@ ominous:
 # triggers TextSniper
 sniper:
     key(cmd-shift-2)
-    sleep(100ms)
+    sleep(300ms)
     user.mouse_drag(0)
     
 search page:
     key(cmd-f)
 search page <user.text>:
     key(cmd-f)
-    sleep(200ms)
+    sleep(500ms)
     insert(user.formatted_text(user.text, "ALL_LOWERCASE"))
 search page (clipboard | paste):
     key(cmd-f)
