@@ -10,19 +10,31 @@ audio down: key(voldown)
 # The syntax for input changes is switchaudiosource -t input -s "Input Device Name"
 # https://github.com/deweller/switchaudio-osx
 
-audio output (desk speakers | headphones):
+^audio (out|output) external headphones:
     user.system_command_nb('/usr/local/bin/switchaudiosource -s "External Headphones"')
-    app.notify("Audio output changed to desk speakers or headphones plugged into laptop")
+    app.notify("Audio output changed to External Headphones")
 
-audio output desk headphones:
+^audio (out|output) scarlet:
     user.system_command_nb('/usr/local/bin/switchaudiosource -s "Scarlett 2i4 USB"')
-    app.notify("Audio output changed to headphones plugged into USB audio interface")
+    app.notify("Audio output changed to Scarlett 2i4 USB")
 
-audio output laptop speakers:
+^audio (out|output) macbook pro speakers:
     user.system_command_nb('/usr/local/bin/switchaudiosource -s "MacBook Pro Speakers"')
-    app.notify("Audio output changed to MacBook Pro speakers")
+    app.notify("Audio output changed to MacBook Pro Speakers")
 
-audio output airpods:
+#^audio (out|output) airpods:
     user.system_command('/usr/local/bin/BluetoothConnector -c 20-78-CD-12-B3-B6 --notify')
     sleep(5000ms)
     user.system_command_nb('/usr/local/bin/switchaudiosource -t input -s "Scarlett 2i4 USB [STEREO]"')
+
+^audio (in|input) macbook pro [microphone]:
+    user.system_command_nb('/usr/local/bin/switchaudiosource -t input -s "MacBook Pro Microphone"')
+    app.notify("Audio input changed to MacBook Pro Microphone")
+
+^audio (in|input) samson [Q2U]:
+    user.system_command_nb('/usr/local/bin/switchaudiosource -t input -s "Samson Q2U"')
+    app.notify("Audio input changed to Samson Q2U")
+
+^audio (in|input) audio technica [pro hex]:
+    user.system_command_nb('/usr/local/bin/switchaudiosource -t input -s "Audio Technica PRO HEx"')
+    app.notify("Audio input changed to Audio Technica PRO HEx")
