@@ -1,6 +1,14 @@
-swap mouse:
-	user.mouse_toggle_control_mouse()
-	user.mouse_toggle_zoom_mouse()
+os: mac
+-
+
+(swap|toggle) mouse:
+	tracking.control_toggle()
+	tracking.control_zoom_toggle()
+
+jiggle mouse:
+	user.mouse_cardinal_move_1d('right',30)
+	sleep(100ms)
+	user.mouse_cardinal_move_1d('left',30)
 
 (buzz | fly | flick):
 	user.mouse_trigger_zoom_mouse()
@@ -28,3 +36,100 @@ wheel [downer] to bottom:
 
 (mouse | cursor) here:
 	user.mouse_move_center_active_window()
+
+# overrides for knausj_talon
+
+touch:
+    mouse_click(0)
+    # close the mouse grid if open
+    user.grid_close()
+    # End any open drags
+    # Touch automatically ends left drags so this is for right drags specifically
+    user.mouse_drag_end()
+    # close zoom mouse if open
+	user.mouse_cancel_zoom_mouse()
+
+righty:
+    mouse_click(1)
+    # close the mouse grid if open
+    user.grid_close()
+    # close zoom mouse if open
+	user.mouse_cancel_zoom_mouse()
+
+mid click:
+    mouse_click(2)
+    # close the mouse grid
+    user.grid_close()
+
+(dub click | duke):
+	mouse_click()
+	mouse_click()
+	# close the mouse grid
+	user.grid_close()
+	# close zoom mouse if open
+	user.mouse_cancel_zoom_mouse()
+
+(trip click | trip lick):
+    mouse_click()
+    mouse_click()
+    mouse_click()
+    # close the mouse grid
+    user.grid_close()
+    # close zoom mouse if open
+	user.mouse_cancel_zoom_mouse()
+left drag | drag:
+    user.mouse_drag(0)
+    # close the mouse grid
+    user.grid_close()
+    # close zoom mouse if open
+	user.mouse_cancel_zoom_mouse()
+right drag | righty drag:
+    user.mouse_drag(1)
+    # close the mouse grid
+    user.grid_close()
+    # close zoom mouse if open
+	user.mouse_cancel_zoom_mouse()
+end drag | drag end: user.mouse_drag_end()
+
+(trip click | trip lick):
+    mouse_click()
+    mouse_click()
+    mouse_click()
+    # close the mouse grid
+    user.grid_close()
+    # close zoom mouse if open
+	user.mouse_cancel_zoom_mouse()
+left drag | drag:
+    user.mouse_drag(0)
+    # close the mouse grid
+    user.grid_close()
+    # close zoom mouse if open
+	user.mouse_cancel_zoom_mouse()
+right drag | righty drag:
+    user.mouse_drag(1)
+    # close the mouse grid
+    user.grid_close()
+    # close zoom mouse if open
+	user.mouse_cancel_zoom_mouse()
+end drag | drag end: user.mouse_drag_end()
+(trip click | trip lick):
+    mouse_click()
+    mouse_click()
+    mouse_click()
+    # close the mouse grid
+    user.grid_close()
+    # close zoom mouse if open
+	user.mouse_cancel_zoom_mouse()
+left drag | drag:
+    user.mouse_drag(0)
+    # close the mouse grid
+    user.grid_close()
+    # close zoom mouse if open
+	user.mouse_cancel_zoom_mouse()
+right drag | righty drag:
+    user.mouse_drag(1)
+    # close the mouse grid
+    user.grid_close()
+    # close zoom mouse if open
+	user.mouse_cancel_zoom_mouse()
+end drag | drag end: user.mouse_drag_end()
