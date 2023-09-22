@@ -6,7 +6,7 @@ swick:
     key(cmd-tab)
 
 # Quick window switch. Found this somewhere, maybe in old community repository
-gibby:
+gibby|trade:
     key(cmd-`)
 
 gabbard:
@@ -53,25 +53,19 @@ snap right:
 snap screen better:
     key(ctrl-alt-cmd-])
 
-slacker [<phrase>]$:
+^slacker$:
     user.switcher_focus("Slack")
-    sleep(200ms)
-    user.parse_phrase(phrase or "")
+    app.window_next()
+    app.window_previous()
 
-portal [<phrase>]$:
+^portal$:
     user.switcher_focus("Google Chrome")
-    sleep(200ms)
-    user.parse_phrase(phrase or "")
 
-^terminal [<phrase>]$:
+^terminal$:
     user.switcher_launch("/Applications/iTerm.app")
-    sleep(200ms)
-    user.parse_phrase(phrase or "")
 
-^coder [<phrase>]$:
+^coder$:
     user.switcher_launch("/Applications/Visual Studio Code.app")
-    sleep(200ms)
-    user.parse_phrase(phrase or "")
 
 # snap top left:
 #     key(function_key-ctrl-alt-cmd-/)
