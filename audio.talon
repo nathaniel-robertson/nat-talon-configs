@@ -22,6 +22,10 @@ audio down: key(voldown)
     user.system_command_nb('/usr/local/bin/switchaudiosource -s "MacBook Pro Speakers"')
     app.notify("Audio output changed to MacBook Pro Speakers")
 
+^audio (out|output) sound blaster:
+    user.system_command_nb('/usr/local/bin/switchaudiosource -s "Sound Blaster Play! 3"')
+    app.notify("Audio output changed to Sound Blaster Play! 3")
+
 #^audio (out|output) airpods:
     user.system_command('/usr/local/bin/BluetoothConnector -c 20-78-CD-12-B3-B6 --notify')
     sleep(5000ms)
