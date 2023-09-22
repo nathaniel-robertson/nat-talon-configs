@@ -73,7 +73,7 @@ tab search:
     key(cmd-shift-a)
 
 tab move left:
-    key(m l)
+    key(ctrl-shift-p)
 
 tab move right:
-    key(m r)
+    key(ctrl-shift-s)
