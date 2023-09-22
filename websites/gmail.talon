@@ -16,7 +16,7 @@ page next:
 page last:
     key(g p)
 
-message delete:
+[message] delete:
     key(#)
 
 archive:
@@ -57,3 +57,16 @@ send email:
 
 toolbar:
     key(,)
+
+select down:
+    key(j)
+    sleep(200ms)
+    key(x)
+
+select up:
+    key(k)
+    sleep(200ms)
+    key(x)
+
+undo [that]:
+    key(z)
