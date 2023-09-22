@@ -58,8 +58,9 @@ search page <user.text>:
     key(cmd-f)
     sleep(500ms)
     insert(user.formatted_text(user.text, "ALL_LOWERCASE"))
-search page (clipboard | paste):
+search page (clip|clipboard|paste):
     key(cmd-f)
+    sleep(500ms)
     edit.paste()
 
 # half:
@@ -90,3 +91,63 @@ talon kill:
 
 scrape:
     key(escape)
+
+whale downer: user.mouse_scroll_down_continuous()
+
+whale downer here:
+    user.mouse_move_center_active_window()
+    user.mouse_scroll_down_continuous()
+
+whale upper: user.mouse_scroll_up_continuous()
+
+whale upper here:
+    user.mouse_move_center_active_window()
+    user.mouse_scroll_up_continuous()
+
+gaze: user.mouse_gaze_scroll()
+
+gaze off: user.mouse_scroll_stop()
+
+# Makes Talon Siri safe!
+# May still cause some trouble if Siri speaking causes Talon to do things
+hey siri [<phrase>]$: app.notify("Siri command ignored")
+
+# The idea here is that I can insert a pause or multiple pauses in a string of commands. My hope is this will be helpful for applications which are a little bit laggy.
+beat:
+    sleep(500ms)
+
+clip save:
+    edit.copy()
+
+clip load:
+    edit.paste()
+
+# Espanso
+snippet search:
+    key(alt-space)
+
+screenshot (edit|annotate):
+    user.system_command_nb("ls -dt /Users/nat/kinsta/inbox/* | grep -iE \"\.png$\" | head -n1 | xargs -I {{}} open \"{{}}\"")
+    user.mouse_toggle_zoom_mouse()
+    user.mouse_toggle_control_mouse()
+    # Open most recent PNG file in inbox in preview
+    # Disable Zoom mouse and enable control mouse
+
+brightness fix:
+    user.mouse_move_center_active_window()
+    user.system_command("osascript -e 'tell application \"System Events\"' -e 'key code 145' -e ' end tell'")
+    user.system_command("osascript -e 'tell application \"System Events\"' -e 'key code 144' -e ' end tell'")
+
+brightness maximum:
+    user.mouse_move_center_active_window()
+    user.system_command("osascript -e 'tell application \"System Events\"' -e 'key code 145' -e ' end tell'")
+    user.system_command("osascript -e 'tell application \"System Events\"' -e 'key code 144' -e ' end tell'")
+    repeat(15)
+
+brightness down:
+    user.mouse_move_center_active_window()
+    user.system_command("osascript -e 'tell application \"System Events\"' -e 'key code 145' -e ' end tell'")
+
+brightness up:
+    user.mouse_move_center_active_window()
+    user.system_command("osascript -e 'tell application \"System Events\"' -e 'key code 144' -e ' end tell'")
