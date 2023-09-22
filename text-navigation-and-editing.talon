@@ -10,6 +10,12 @@ em dash:
 em dasher:
     insert(" — ")
 
+angler:
+    insert(" > ")
+
+spamma:
+    insert(", ")
+
 secure address:
     insert("https://")
 
@@ -76,3 +82,19 @@ grab text:
     sleep(500ms)
     mouse_click(0)
         
+grab word:
+    user.mouse_cancel_zoom_mouse()
+    mouse_click(0)
+    mouse_click(0)
+    edit.copy()    
+    sleep(500ms)
+    mouse_click(0)
+
+grab (line|paragraph):
+    user.mouse_cancel_zoom_mouse()
+    mouse_click(0)
+    mouse_click(0)
+    mouse_click(0)
+    edit.copy()    
+    sleep(500ms)
+    mouse_click(0)
