@@ -16,18 +16,12 @@ tag(): user.emoji()
 (slack | lack) status:
     key(cmd-shift-y)
 
-(slack | lack) (upload | attach):
+((slack | lack) (upload | attach))|insert image:
     key(cmd-u)
-
-(cursor | mouse) sidebar:
-    user.mouse_helper_move_image_relative("2022-05-1_14.29.05.469137.png", 0, -60, 74)
-    sleep(0.05)
-    sleep(0.05)
-
 
 ([sidebar] close thread | [sidebar] thread close| sidebar close):
     user.mouse_helper_position_save()
-    user.mouse_helper_move_image_relative("2022-05-31_14.29.05.469137.png", 0)
+    user.mouse_helper_move_image_relative("2023-07-11_16.33.40.211427.png", 0)
     sleep(0.05)
     mouse_click(0)
     sleep(0.05)
