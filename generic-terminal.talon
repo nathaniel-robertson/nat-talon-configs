@@ -28,38 +28,12 @@ lisa list:
 [close] frozen ssh:
     key(enter ~ .)
 
+signal interrupt:
+    key(ctrl-c)
+
 # Override of defaults knausj. This does not work right now. Manually pressing the keys definitely does work. Saying "alt delete" does work so I'm not sure what's going on here.
 clear word:
     key(alt-backspace)
-
-query a:
-    insert("dig a ")
-
-query name server:
-    insert("dig ns ")
-
-query text [record]:
-    insert("dig txt ")
-
-query mail [record]:
-    insert("dig mx ")
-
-query authoritative:
-    insert("query_authoritative_nameserver ")
-
-who is organization:
-    insert("whois  | grep \"Organization:\"")
-    key(alt-left)
-    repeat(1)
-    edit.left()
-    repeat(2)
-
-who is (name server | name servers | authoritative):
-    insert("whois  | grep \"Name Server:\"")
-    key(alt-left)
-    repeat(2)
-    edit.left()
-    repeat(2)
 
 logout:
     insert("exit")
@@ -73,6 +47,9 @@ history <number>:
     insert("history | tail -n{number}")
     key(enter)
 
-(run | rerun) [history] <number>:
+history (run | rerun) <number>:
     insert("!{number}")
     key(enter)    
+
+make directory:
+    insert("mkdir -p ")
