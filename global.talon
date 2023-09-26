@@ -12,7 +12,7 @@ search menus:
     key(shift-cmd-/)
 
 stick:
-    user.mouse_cancel_zoom_mouse()
+    tracking.zoom_cancel()
 
 shenter:
     key(shift-enter)

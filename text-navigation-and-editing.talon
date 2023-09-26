@@ -77,13 +77,13 @@ grab text:
     key(shift:down)
     mouse_click(0)
     key(shift:up)
-    user.mouse_cancel_zoom_mouse()
+    tracking.zoom_cancel()
     edit.copy()    
     sleep(500ms)
     mouse_click(0)
         
 grab word:
-    user.mouse_cancel_zoom_mouse()
+    tracking.zoom_cancel()
     mouse_click(0)
     mouse_click(0)
     edit.copy()    
@@ -91,7 +91,7 @@ grab word:
     mouse_click(0)
 
 grab (line|paragraph):
-    user.mouse_cancel_zoom_mouse()
+    tracking.zoom_cancel()
     mouse_click(0)
     mouse_click(0)
     mouse_click(0)
