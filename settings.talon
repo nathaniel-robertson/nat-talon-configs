@@ -9,3 +9,4 @@ tag(): user.mouse_cursor_commands_enable
 settings():
     user.grids_put_one_bottom_left = 0
     user.screenshot_folder = "/Users/Nat/Google Drive/Inbox"
+    user.mode_indicator_show = 1
