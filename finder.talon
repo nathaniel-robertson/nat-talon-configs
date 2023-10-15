@@ -10,6 +10,8 @@ open with:
 (file open | folder open):
     key(cmd-down)
 
-file parent:
+(file parent | dir climb):
     key(cmd-up)
 
+move item [here]:
+    key(alt-cmd-v)
