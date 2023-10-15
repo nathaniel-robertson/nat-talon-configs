@@ -54,7 +54,7 @@ sniper:
     
 search page:
     key(cmd-f)
-search page <user.text>:
+search page [for] <user.text>:
     key(cmd-f)
     sleep(500ms)
     insert(user.formatted_text(user.text, "ALL_LOWERCASE"))
@@ -128,8 +128,8 @@ snippet search:
 
 screenshot (edit|annotate):
     user.system_command_nb("ls -dt /Users/nat/kinsta/inbox/* | grep -iE \"\.png$\" | head -n1 | xargs -I {{}} open \"{{}}\"")
-    user.mouse_toggle_zoom_mouse()
-    user.mouse_toggle_control_mouse()
+    tracking.control_zoom_toggle()
+    tracking.control_toggle()
     # Open most recent PNG file in inbox in preview
     # Disable Zoom mouse and enable control mouse
 
@@ -151,3 +151,12 @@ brightness down:
 brightness up:
     user.mouse_move_center_active_window()
     user.system_command("osascript -e 'tell application \"System Events\"' -e 'key code 144' -e ' end tell'")
+
+# "cancel cancel" is frequently misheard as "cancer cancel"
+cancer cancel$: skip()
+
+# Thanks Phil Cohen
+# Defeating crappy login fields:
+    ^(type | insert) the clipboard$:
+        text = clip.text()
+        insert(text)
