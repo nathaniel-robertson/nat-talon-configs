@@ -8,7 +8,7 @@ rectangle|square|box:
 oval|circle:
     key(ctrl-cmd-o)
 
-arrow:
+(zero|arrow):
     key(ctrl-cmd-a)
 
 text [box]:
