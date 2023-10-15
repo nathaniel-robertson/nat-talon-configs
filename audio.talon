@@ -35,9 +35,9 @@ audio down: key(voldown)
     user.system_command_nb('/usr/local/bin/switchaudiosource -t input -s "MacBook Pro Microphone"')
     app.notify("Audio input changed to MacBook Pro Microphone")
 
-^audio (in|input) samson [Q2U]:
-    user.system_command_nb('/usr/local/bin/switchaudiosource -t input -s "Samson Q2U"')
-    app.notify("Audio input changed to Samson Q2U")
+^audio (in|input) behringer:
+    user.system_command_nb('/usr/local/bin/switchaudiosource -t input -s "Behringer XM8500"')
+    app.notify("Audio input changed to Behringer XM8500")
 
 ^audio (in|input) audio technica [pro hex]:
     user.system_command_nb('/usr/local/bin/switchaudiosource -t input -s "Audio Technica PRO HEx"')
