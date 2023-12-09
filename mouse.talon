@@ -1,7 +1,7 @@
 os: mac
 -
 
-(swap|toggle) mouse:
+((swap|toggle) mouse|tracking mode):
 	tracking.control_toggle()
 	tracking.control_zoom_toggle()
 
