@@ -40,32 +40,6 @@ tab this (clipboard | paste):
     sleep(200ms)
     key(enter)
 
-(tab link rich copy | pretty page link):
-    key(ctrl-shift-p)
-    sleep(500ms)
-    key(enter)
-
-
-
-
-# function provided by Vimium custom configuration
-
-links:
-    key(f)
-
-links tab:
-    key(shift-f)
-
-links copy:
-    key(y f)
-
-# a lot faster than selecting the address bar, selecting all, and copying that
-tab (link | links | URL) copy:
-    key(t l c)
-
-tab duplicate:
-    key(d)
-
 tab restore:
     tab_reopen()
 
@@ -77,3 +51,37 @@ tab move left:
 
 tab move right:
     key(ctrl-shift-s)
+
+# Command for opening link under cursor in new tab
+blank:
+    tracking.zoom_cancel()    
+    key(cmd:down)
+    mouse_click(0)
+    key(cmd:up)
+    sleep(500ms)
+    app.tab_next()
+
+# Command for opening link under cursor in new tab
+stash:
+    tracking.zoom_cancel()    
+    key(cmd:down)
+    mouse_click(0)
+    key(cmd:up)
+
+# Command for copying link under cursor
+copy link:
+    tracking.zoom_cancel()    
+    mouse_click(1)
+    sleep(300ms)
+    insert("copy link address")
+    sleep(300ms)
+    key(enter)
+
+# Command for copying link text under cursor
+copy text$:
+    tracking.zoom_cancel()    
+    mouse_click(1)
+    sleep(300ms)
+    insert("copy")
+    sleep(300ms)
+    key(enter)
