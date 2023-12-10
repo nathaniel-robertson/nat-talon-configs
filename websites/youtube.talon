@@ -7,10 +7,10 @@ browser.host: www.youtube.com
 mute:
     key(m)
 
-(seek next | seek forward | seek right | skip forward):
+(seek next | seek forward | seek right | skip forward | fast forward):
     key(right)
 
-(seek last | seek back | seek left | skip back):
+(seek last | seek back | seek left | skip back | rewind):
     key(left)
 
 speed up:
