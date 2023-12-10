@@ -56,3 +56,28 @@ bullets:
 
 message send:
     key(enter)
+
+activity:
+    key(cmd-shift-m)
+
+later:
+    user.mouse_helper_position_save()
+    user.mouse_helper_move_image_relative("2023-10-22_11.22.30.190394.png", 0)
+    sleep(0.05)
+    mouse_click(0)
+    sleep(0.05)
+    user.mouse_helper_position_restore()
+
+direct messages:
+    key(cmd-shift-k)
+
+home:
+    user.mouse_helper_position_save()
+    user.mouse_helper_move_image_relative("2023-10-22_10.14.07.937530.png", 0)
+    sleep(0.05)
+    mouse_click(0)
+    sleep(0.05)
+    user.mouse_helper_position_restore()
+
+threads:
+    key(cmd-shift-t)
