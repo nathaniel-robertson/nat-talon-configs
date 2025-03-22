@@ -33,7 +33,7 @@ application hide others:
     key(cmd-alt-h)
 
 # maximizes window. triggers a better touch tool shortcut
-snap max:
+snap (max|maximum):
     key(ctrl-alt-cmd-up)
     
 # restores window. triggers a better touch tool shortcut
@@ -53,18 +53,16 @@ snap right:
 snap screen better:
     key(ctrl-alt-cmd-])
 
-^slacker$:
+slacker:
     user.switcher_focus("Slack")
-    app.window_next()
-    app.window_previous()
 
-^portal$:
+(portal|chromium):
     user.switcher_focus("Google Chrome")
 
-^terminal$:
+terminal:
     user.switcher_launch("/Applications/iTerm.app")
 
-^coder$:
+coder:
     user.switcher_launch("/Applications/Visual Studio Code.app")
 
 # snap top left:
