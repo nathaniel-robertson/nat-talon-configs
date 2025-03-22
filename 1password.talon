@@ -2,6 +2,9 @@ os: mac
 and app.bundle: com.1password.1password
 -
 
+settings():
+    key_wait = 5.0
+
 search (passwords|items):
     key(cmd-f)
 
