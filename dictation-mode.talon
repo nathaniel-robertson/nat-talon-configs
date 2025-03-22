@@ -20,7 +20,11 @@ angler:
 (spamma|spamuh):
     user.dictation_insert(", ")
 
-# allows for reliable insertion of digits in dictation mode
-numb <number>:
-    user.dictation_insert("{number}")
+ellipses|ominous:
+    user.dictation_insert("…")
 
+zoom cancel:
+    tracking.zoom_cancel()
+
+# Copied from abbreviate.talon in the talon community repository. Added a space prior to the abbreviation expansion so it plays better with dictation mode.
+(abbreviate | abreviate | brief) {user.abbreviation}: " {abbreviation}"
