@@ -29,5 +29,11 @@ video next:
 full screen:
     key(f)
 
-(closed captions | subtitles):
+([closed] captions | subtitles):
     key(c)
+
+(theatre (mode|view)|(normal|default) (mode|view)):
+    key(t)
+
+mini player:
+    key(i)
