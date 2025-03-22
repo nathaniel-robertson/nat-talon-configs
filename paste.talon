@@ -16,28 +16,35 @@ paste plain|clip load unformatted|clip load plain:
     key(cmd-shift-p)
     sleep(150ms)
     key(shift-enter)
+    # user.system_command("pbpaste | cat | pbcopy")
+    # edit.paste()
 
 # The syntax on this command is probably wrong. The idea is to be able to toggle the one through nine shortcuts in paste to paste a specific item.
-paste <number>|load <number>:
+paste <number>:
+    key(cmd-shift-p)
+    sleep(150ms)
     key("cmd-{number}")
 
-clipboard|clippy|clip history|clip [load] list:
+clipboard|clipboard list|clippy|clipboard history|clip history|clip [load] list:
     key(cmd-shift-p)
 
-(clipboard | clippy | clip history|clip [load] list) [search] <user.text>:
+(clipboard | clipboard list | clippy |clipboard history| clip history|clip [load] list) [search] <user.text>:
     key(cmd-shift-p)
     sleep(100ms)
     insert(user.formatted_text(user.text, "ALL_LOWERCASE"))
 
-(clipboard toggle sound | clippy toggle sound | clip history toggle sound):
-    key(cmd-shift-p)
-    sleep(500ms)
-    key(cmd-,)
-    key(tab)
-    repeat(2)
-    sleep(500ms)
-    key(space)
-    # sleep(2000ms)
-    key(escape)
-    key(cmd-tab)
-    key(cmd-tab)
+#mackey:
+#    key(cmd-shift-c)
+
+# (clipboard toggle sound | clippy toggle sound | clip history toggle sound):
+#     key(cmd-shift-p)
+#     sleep(500ms)
+#     key(cmd-,)
+#     key(tab)
+#     repeat(2)
+#     sleep(500ms)
+#     key(space)
+#     # sleep(2000ms)
+#     key(escape)
+#     key(cmd-tab)
+#     key(cmd-tab)
