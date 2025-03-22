@@ -5,34 +5,79 @@ os: mac
 	tracking.control_toggle()
 	tracking.control_zoom_toggle()
 
+tracking head only:
+    tracking.control_gaze_toggle()
+
 jiggle mouse:
 	user.mouse_cardinal_move_1d('right',30)
 	sleep(100ms)
 	user.mouse_cardinal_move_1d('left',30)
 
-(buzz | fly | flick):
-	user.mouse_trigger_zoom_mouse()
+(fly | flick):
+	#user.mouse_trigger_zoom_mouse()
+    tracking.zoom()
 
-wheel [upper] to top here:
-	user.mouse_move_center_active_window()
-    user.mouse_scroll_up_continuous()
-	user.mouse_scroll_up()
-	repeat(9)
+# (wheel|whale) [upper] to top here:
+# 	user.mouse_move_center_active_window()
+#     sleep(100ms)
+#     user.mouse_cardinal_move_1d('right',30)
+# 	sleep(100ms)
+# 	user.mouse_cardinal_move_1d('left',30)
+#     user.mouse_scroll_up_continuous()
+# 	user.mouse_scroll_up()
+# 	repeat(9)
 
-wheel [upper] to top:
+(wheel|whale) [upper] to top:
+    # user.mouse_cardinal_move_1d('right',30)
+	sleep(100ms)
+	# user.mouse_cardinal_move_1d('left',30)
 	user.mouse_scroll_up_continuous()
+    user.mouse_scroll_up()
 	repeat(9)
 
-wheel [downer] to bottom here:
-	user.mouse_move_center_active_window()
-    user.mouse_scroll_up_continuous()
+# (wheel|whale) [downer] to bottom here:
+# 	user.mouse_move_center_active_window()
+#     sleep(100ms)
+#     user.mouse_cardinal_move_1d('right',30)
+# 	sleep(100ms)
+# 	user.mouse_cardinal_move_1d('left',30)
+#     user.mouse_scroll_up_continuous()
+# 	user.mouse_scroll_down()
+# 	repeat(9)
+
+(wheel|whale) [downer] to bottom:
+    # user.mouse_cardinal_move_1d('right',30)
+	sleep(100ms)
+	# user.mouse_cardinal_move_1d('left',30)
+	user.mouse_scroll_down_continuous()
 	user.mouse_scroll_down()
 	repeat(9)
 
-wheel [downer] to bottom:
-	user.mouse_scroll_up_continuous()
-	user.mouse_scroll_down()
-	repeat(9)
+(wheel|whale) downer:
+    user.mouse_cardinal_move_1d('right',30)
+	sleep(100ms)
+	user.mouse_cardinal_move_1d('left',30)
+    user.mouse_scroll_down_continuous()
+
+# (wheel|whale) downer here:
+#     user.mouse_move_center_active_window()
+#     user.mouse_cardinal_move_1d('right',30)
+# 	sleep(100ms)
+# 	user.mouse_cardinal_move_1d('left',30)
+#     user.mouse_scroll_down_continuous()
+
+(wheel|whale) upper:
+    user.mouse_cardinal_move_1d('right',30)
+	sleep(100ms)
+	user.mouse_cardinal_move_1d('left',30)
+    user.mouse_scroll_up_continuous()
+
+# (wheel|whale) upper here:
+#     user.mouse_move_center_active_window()
+#     user.mouse_cardinal_move_1d('right',30)
+# 	sleep(100ms)
+# 	user.mouse_cardinal_move_1d('left',30)
+#     user.mouse_scroll_up_continuous()
 
 (mouse | cursor) here:
 	user.mouse_move_center_active_window()
