@@ -1,5 +1,5 @@
 mode: all
-and not hostname: /^KINSTA-NR-MBP-2021/
+and not hostname: /^KINSTA-NR-MBP/
 -
 
 ^personal [talon] sleep [<phrase>]$: speech.disable()
