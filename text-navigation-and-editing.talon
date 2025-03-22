@@ -13,8 +13,11 @@ em dasher:
 angler:
     insert(" > ")
 
-spamma:
+(spamma|spamuh):
     insert(", ")
+
+full stop:
+    insert(". ")
 
 secure address:
     insert("https://")
