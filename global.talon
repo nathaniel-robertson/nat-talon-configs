@@ -6,12 +6,13 @@ key(f5):
     speech.toggle()
 
 mac lock screen:
+    speech.disable()
     key(ctrl-cmd-q)
 
 search menus:
     key(shift-cmd-/)
 
-stick:
+(stick|zoom cancel):
     tracking.zoom_cancel()
 
 shenter:
@@ -84,25 +85,13 @@ notification menu:
     user.click_spot("notification menu")
 
 talon restart:
-    user.system_command_nb("killall Talon; sleep 1; open /Applications/Talon\ Beta.app/")
+    user.system_command_nb("killall Talon; sleep 1; open /Applications/Talon.app/")
 
 talon kill:
     user.system_command_nb("killall Talon")
 
-scrape:
-    key(escape)
-
-whale downer: user.mouse_scroll_down_continuous()
-
-whale downer here:
-    user.mouse_move_center_active_window()
-    user.mouse_scroll_down_continuous()
-
-whale upper: user.mouse_scroll_up_continuous()
-
-whale upper here:
-    user.mouse_move_center_active_window()
-    user.mouse_scroll_up_continuous()
+# scrape:
+#     key(escape)
 
 gaze: user.mouse_gaze_scroll()
 
@@ -110,7 +99,9 @@ gaze off: user.mouse_scroll_stop()
 
 # Makes Talon Siri safe!
 # May still cause some trouble if Siri speaking causes Talon to do things
-hey siri [<phrase>]$: app.notify("Siri command ignored")
+hey siri [<phrase>]$:
+    speech.disable()
+    app.notify("Siri command ignored, Talon in sleep mode")
 
 # The idea here is that I can insert a pause or multiple pauses in a string of commands. My hope is this will be helpful for applications which are a little bit laggy.
 beat:
@@ -133,22 +124,22 @@ screenshot (edit|annotate):
     # Open most recent PNG file in inbox in preview
     # Disable Zoom mouse and enable control mouse
 
-brightness fix:
+screen brightness fix:
     user.mouse_move_center_active_window()
     user.system_command("osascript -e 'tell application \"System Events\"' -e 'key code 145' -e ' end tell'")
     user.system_command("osascript -e 'tell application \"System Events\"' -e 'key code 144' -e ' end tell'")
 
-brightness maximum:
+screen brightness maximum:
     user.mouse_move_center_active_window()
     user.system_command("osascript -e 'tell application \"System Events\"' -e 'key code 145' -e ' end tell'")
     user.system_command("osascript -e 'tell application \"System Events\"' -e 'key code 144' -e ' end tell'")
     repeat(15)
 
-brightness down:
+screen brightness down:
     user.mouse_move_center_active_window()
     user.system_command("osascript -e 'tell application \"System Events\"' -e 'key code 145' -e ' end tell'")
 
-brightness up:
+screen brightness up:
     user.mouse_move_center_active_window()
     user.system_command("osascript -e 'tell application \"System Events\"' -e 'key code 144' -e ' end tell'")
 
@@ -160,3 +151,32 @@ cancer cancel$: skip()
     ^(type | insert) the clipboard$:
         text = clip.text()
         insert(text)
+
+^sorry one sec [<phrase>]$: speech.disable()
+
+finder open <user.system_path>: 
+    app.notify(system_path)
+    user.system_command("open {system_path}")
+
+code open <user.system_path>: 
+    app.notify(system_path)
+    user.system_command("/usr/local/bin/code {system_path}")
+
+# This makes it easier to input numbers with a decimal in the middle
+# The syntax is interesting because I haven't seen this with just double quotes before instead of the insert function
+numb <number> point <number>:
+    "{number_1}.{number_2}"
+
+numb <number> point <number> point <number>:
+    "{number_1}.{number_2}.{number_3}"
+
+numb <number> point <number> point <number> point <number>:
+    "{number_1}.{number_2}.{number_3}.{number_4}"   
+
+numb <number> slash <number>:
+    "{number_1}/{number_2}" 
+
+^grab selection quick$:
+    key(cmd-shift-4)
+    sleep(200ms)
+    user.mouse_drag(0)
