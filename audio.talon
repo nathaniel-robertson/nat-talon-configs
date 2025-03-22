@@ -14,15 +14,15 @@ audio down: key(voldown)
     user.system_command_nb('/usr/local/bin/switchaudiosource -s "External Headphones"')
     app.notify("Audio output changed to External Headphones")
 
-^audio (out|output) scarlet:
+^audio (out|output) (scarlet|headphones):
     user.system_command_nb('/usr/local/bin/switchaudiosource -s "Scarlett 2i4 USB"')
     app.notify("Audio output changed to Scarlett 2i4 USB")
 
-^audio (out|output) macbook pro speakers:
+^audio (out|output) (macbook|laptop) pro speakers:
     user.system_command_nb('/usr/local/bin/switchaudiosource -s "MacBook Pro Speakers"')
     app.notify("Audio output changed to MacBook Pro Speakers")
 
-^audio (out|output) sound blaster:
+^audio (out|output) (sound blaster|desk speakers):
     user.system_command_nb('/usr/local/bin/switchaudiosource -s "Sound Blaster Play! 3"')
     app.notify("Audio output changed to Sound Blaster Play! 3")
 
@@ -35,10 +35,10 @@ audio down: key(voldown)
     user.system_command_nb('/usr/local/bin/switchaudiosource -t input -s "MacBook Pro Microphone"')
     app.notify("Audio input changed to MacBook Pro Microphone")
 
-^audio (in|input) behringer:
+^audio (in|input) (behringer|boom mic):
     user.system_command_nb('/usr/local/bin/switchaudiosource -t input -s "Behringer XM8500"')
     app.notify("Audio input changed to Behringer XM8500")
 
-^audio (in|input) audio technica [pro hex]:
+^audio (in|input) (audio technica [pro hex]|headset):
     user.system_command_nb('/usr/local/bin/switchaudiosource -t input -s "Audio Technica PRO HEx"')
     app.notify("Audio input changed to Audio Technica PRO HEx")
