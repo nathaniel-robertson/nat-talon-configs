@@ -81,3 +81,39 @@ home:
 
 threads:
     key(cmd-shift-t)
+
+copy message link:
+    tracking.zoom_cancel()    
+    mouse_click(1)
+    sleep(300ms)
+    key(l)
+
+copy link:
+    tracking.zoom_cancel()    
+    mouse_click(1)
+    sleep(200ms)
+    insert("copy link")
+    sleep(200ms)
+    key(enter)
+
+get (notified|notifications) about [new] replies:
+    tracking.zoom_cancel()   
+    mouse_click(1)
+    sleep(300ms)
+    edit.up()
+    sleep(150ms)
+    edit.right()
+    sleep(150ms)
+    edit.down()
+    sleep(1000ms)
+    key(enter)
+
+remind me about this:
+    tracking.zoom_cancel()   
+    mouse_click(1)
+    sleep(300ms)
+    edit.up()
+    edit.up()
+    edit.up()
+    sleep(150ms)
+    edit.right()
