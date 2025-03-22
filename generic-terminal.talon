@@ -53,3 +53,30 @@ history (run | rerun) <number>:
 
 make directory:
     insert("mkdir -p ")
+
+grep [for] files:
+    insert("gre --color=always -ril \"\" .")
+    edit.left()
+    repeat(2)
+
+grep [for] files [with] context:
+    insert("grep --color=always -rin -C 3 \"\" .")
+    edit.left()
+    repeat(2)
+
+grep:
+    insert("grep --color=always -iE \"\"")
+    edit.left()
+
+less:
+    insert("less -R ")
+
+date stamp:
+    insert("date -u +\"%a %d %b %T %Z\"")
+    key(enter)
+
+again:
+    edit.up()
+    sleep(300ms)
+    key(enter)
+    sleep(300ms)
