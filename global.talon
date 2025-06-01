@@ -180,3 +180,12 @@ numb <number> slash <number>:
     key(cmd-shift-4)
     sleep(200ms)
     user.mouse_drag(0)
+
+go down hold:
+    user.key_hold("down", 20000, "100ms")
+
+go up hold:
+    user.key_hold("up", 20000, "100ms")
+
+release key:
+    user.release_all_keys()
