@@ -26,5 +26,8 @@ ellipses|ominous:
 zoom cancel:
     tracking.zoom_cancel()
 
+bang:
+    user.dictation_insert("!")
+
 # Copied from abbreviate.talon in the talon community repository. Added a space prior to the abbreviation expansion so it plays better with dictation mode.
 (abbreviate | abreviate | brief) {user.abbreviation}: " {abbreviation}"
