@@ -46,11 +46,7 @@ tab restore:
 tab search:
     key(cmd-shift-a)
 
-tab move left:
-    key(ctrl-shift-p)
 
-tab move right:
-    key(ctrl-shift-s)
 
 # Command for opening link under cursor in new tab
 blank:
@@ -85,3 +81,24 @@ copy text$:
     insert("copy")
     sleep(300ms)
     key(enter)
+
+[tab] group last:
+    key(cmd-shift-,)
+    sleep(100ms)
+
+[tab] group next:
+    key(cmd-shift-.)
+    sleep(100ms)
+
+[tab] group close:
+    key(cmd-shift-0)
+    sleep(100ms)
+
+tab move left:
+    key(ctrl-shift-j)
+
+tab move right:
+    key(ctrl-shift-l)
+
+tab new ungrouped:
+    key(cmd-shift-u)
