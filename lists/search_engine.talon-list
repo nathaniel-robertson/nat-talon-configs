@@ -1,0 +1,9 @@
+list: user.search_engine
+-
+amazon: https://www.amazon.com/s/?field-keywords=%s
+google: https://www.google.com/search?q=%s
+map: https://maps.google.com/maps?q=%s
+scholar: https://scholar.google.com/scholar?q=%s
+wiki: https://en.wikipedia.org/w/index.php?search=%s
+confluence: https://kinsta.atlassian.net/wiki/search?text=%s
+kinsta: https://www.google.com/search?q=inurl:kinsta.com/knowledgebase+%7C+inurl:kinsta.com/help+%7C+inurl:kinsta.com/docs+%s
