@@ -80,3 +80,31 @@ again:
     sleep(300ms)
     key(enter)
     sleep(300ms)
+
+find file [by name]:
+    insert("find . -type f -name \"\"")
+    edit.left()
+
+find directory [by name]:
+    insert("find . -type d -name \"\"")
+    edit.left()
+
+find (file|files) modified in last <number> minutes:
+    insert("find . -type f -mmin -{number}") 
+
+find (file|files) modified in last <number> days:
+    insert("find . -type f -mtime -{number}")
+
+find directories modified in last <number> minutes:
+    insert("find . -type d -mmin -{number}")
+
+find directories modified in last <number> days:
+    insert("find . -type d -mtime -{number}")
+
+
+file sizes:
+    insert("( shopt -s dotglob && find . -maxdepth 1 -type f -name \"*\" ) | xargs du -bh | sort -hr | head -n50")
+    key(enter)
+
+change mode user execute:
+    insert("chmod u+x ")
