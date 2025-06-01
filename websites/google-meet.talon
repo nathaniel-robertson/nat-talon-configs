@@ -1,4 +1,5 @@
-browser.host: meet.google.com
+#browser.host: meet.google.com
+app.bundle: com.google.Chrome.app.kjgfgldnnfoeklkmfkjfagphfepbbdan
 mode: all
 -
 
