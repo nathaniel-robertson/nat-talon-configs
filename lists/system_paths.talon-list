@@ -1,0 +1,37 @@
+list: user.system_paths
+-
+user: /Users/Nat
+profile: /Users/Nat
+desktop: /Users/Nat/Desktop
+desk: /Users/Nat/Desktop
+documents: /Users/Nat/Documents
+docks: /Users/Nat/Documents
+downloads: /Users/Nat/Downloads
+music: /Users/Nat/Music
+pictures: /Users/Nat/Pictures
+videos: /Users/Nat/Videos
+talon home: /Users/Nat/.talon
+talon user: /Users/Nat/.talon/user
+kinsta talon configs: /Users/Nat/.talon/user/kinsta-talon-configs
+nat talon configs: /Users/Nat/.talon/user/nat-talon-configs
+talon community: /Users/Nat/.talon/user/knausj_talon
+noss jay talon: /Users/Nat/.talon/user/knausj_talon
+noss jay talon: /Users/Nat/.talon/user/knausj_talon
+espanso: /Users/nat/Library/Application\ Support/espanso
+snippets: /Users/nat/Library/Application\ Support/espanso
+inbox: /Users/Nat/kinsta/inbox
+kinsta scripts: /Users/Nat/kinsta/kinsta-scripts
+
+# user: /Users/nat
+# desktop: /Users/nat/Desktop
+# desk: /Users/nat/Desktop
+# documents: /Users/nat/Documents
+# docks: /Users/nat/Documents
+# downloads: /Users/nat/Downloads
+# music: /Users/nat/Music
+# pictures: /Users/nat/Pictures
+# videos: /Users/nat/Videos
+# talon home: /Users/nat/.talon
+# talon recordings: /Users/nat/.talon/recordings
+# talon user: /Users/nat/.talon/user
+# home: /Users/nat
