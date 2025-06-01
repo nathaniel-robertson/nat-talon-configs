@@ -96,7 +96,7 @@ copy link:
     sleep(200ms)
     key(enter)
 
-get (notified|notifications) about [new] replies:
+(get (notified|notifications) about [new] replies)|(get reply notifications):
     tracking.zoom_cancel()   
     mouse_click(1)
     sleep(300ms)
