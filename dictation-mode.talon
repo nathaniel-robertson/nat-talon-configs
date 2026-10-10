@@ -29,5 +29,17 @@ zoom cancel:
 bang:
     user.dictation_insert("!")
 
+caution mark|caution murk|caution merk|portion mark:
+    user.dictation_insert("?")
+
+karma|coma|kama|gamma|comma|comment:
+    user.dictation_insert(",")
+
+prod|pretty good:
+    user.dictation_insert(".")
+
+you paragraph|he paragraph:
+    user.dictation_insert("\n\n") 
+
 # Copied from abbreviate.talon in the talon community repository. Added a space prior to the abbreviation expansion so it plays better with dictation mode.
 (abbreviate | abreviate | brief) {user.abbreviation}: " {abbreviation}"
