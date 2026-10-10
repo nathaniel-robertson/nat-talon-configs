@@ -55,7 +55,7 @@ make directory:
     insert("mkdir -p ")
 
 grep [for] files:
-    insert("gre --color=always -ril \"\" .")
+    insert("grep --color=always -ril \"\" .")
     edit.left()
     repeat(2)
 
@@ -108,3 +108,27 @@ file sizes:
 
 change mode user execute:
     insert("chmod u+x ")
+
+lisa list wait:
+    insert("ls -l ")
+
+file move:
+    insert("mv ")
+
+file (delete|remove):
+    insert("rm ")
+
+file (delete|remove) force:
+    insert("rm -f ")
+
+file (delete|remove) (recursive|children):
+    insert("rm -r ")
+
+file (delete|remove) (recursive|children) force:
+    insert("rm -rf ")
+
+vim:
+    insert("vim ")
+
+tail follow:
+    insert("tail -f ")
