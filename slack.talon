@@ -17,7 +17,7 @@ tag(): user.emoji()
     key(cmd-shift-y)
 
 ((slack | lack) (upload | attach))|insert image:
-    key(cmd-u)
+    key(cmd-o)
 
 ([sidebar] close thread | [sidebar] thread close| sidebar close):
     user.mouse_helper_position_save()
@@ -117,3 +117,10 @@ remind me about this:
     edit.up()
     sleep(150ms)
     edit.right()
+
+insert latest image:
+    key(cmd-o)
+    sleep(1500ms)
+    edit.down()
+    sleep(500ms)
+    key(enter)
