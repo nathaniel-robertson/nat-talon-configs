@@ -19,6 +19,9 @@ angler:
 full stop:
     insert(". ")
 
+caution mark|caution murk|caution merk|portion mark:
+    insert("?")
+
 secure address:
     insert("https://")
 
