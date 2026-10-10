@@ -184,8 +184,14 @@ numb <number> slash <number>:
 go down hold:
     user.key_hold("down", 20000, "100ms")
 
+go down hold fast:
+    user.key_hold("down", 20000, "25ms")
+
 go up hold:
     user.key_hold("up", 20000, "100ms")
+
+go up hold fast:
+    user.key_hold("up", 20000, "25ms")
 
 release key:
     user.release_all_keys()
