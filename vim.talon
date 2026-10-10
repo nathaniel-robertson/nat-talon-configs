@@ -9,14 +9,14 @@ quit:
     insert("q")
     key(enter)
 
-(save | write) [and] quit:
+[file] save [and] quit | [file] write [and] quit:
     key(escape)
     key(escape)
     key(:)
     insert("wq")
     key(enter)
 
-(save | write):
+[file] save | [file] write:
     key(escape)
     key(escape)
     key(:)
@@ -173,3 +173,13 @@ match previous:
     key(escape)
     key(escape)
     key(shift-n)
+
+set paste:
+    key(escape)
+    key(escape)
+    sleep(200ms)
+    key(:)
+    sleep(200ms)
+    insert("set paste")
+    sleep(200ms)
+    key(enter)
